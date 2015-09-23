@@ -21,7 +21,7 @@ h2 {
 
 .block-set {
 	white-space: nowrap;
-	height: 520px;
+	height: 550px;
 	width: 1000px;
 	position: relative;
 	margin: 0 auto 80px;
@@ -135,6 +135,43 @@ h2 {
 	font-family: helvetica,'LiHei Pro','Heiti TC','微軟正黑體';
 	font-size: 40px;
 	line-height: 55px;
+}
+
+.loading-block h2 .toplay {
+	font-size: 50px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 120px;
+	border: 1px #5cffd6 solid;
+	display: inline-block;
+	padding: 0 25px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.8);
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+}
+
+.code {
+	position: absolute;
+	left: 120px;
+	top: 315px;
+	font-family: Consolas;
+	border-radius: 4px;
+	color: #333;
+	background: #dadada;
+	border: 1px #ccc solid;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.5em;
+	font-weight: normal;
+	opacity: .9;
+}
+
+.loading-block h2 .toplay:active {
+	background-color: rgba(0,0,0,1);
+	box-shadow: 0 0px 0px rgba(0,0,0,0.9);
+}
 }
 
 .loading-block.end h2 {
