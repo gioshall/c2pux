@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>C2P UX</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+</head>
+<body>
+
+<div class="title">
+	C2P UX
+</div>
+
+<ul class="nav">
+	<li><a href="#loading">loading</a></li>
+	<li><a href="#game">game play</a></li>
+	<li><a href="#end">trial end</a></li>
+</ul>
+
+<h1 id="loading">loading</h1>
+<h2>遊戲正式啟動前畫面，客戶可自行上傳底圖及修改文字，遊戲啟動後即消除。</h2>
+
+<div class="block-set">
+<div class="loading-block bg-spec landscape" style="background-image: url(acu.jpg);">
+	<h2><img src="loading.svg" class="loading-icon"> 遊戲準備中，請稍候</h2>
+</div>
+
+<div class="loading-block bg-spec portrait" style="background-image: url(acu.jpg);">
+	<h2><img src="loading.svg" class="loading-icon"> 遊戲準備中，請稍候</h2>
+</div>
+
+<div class="spec">
+	<h3>viewport 960 * 540 之下</h3> 
+	<ul>
+		<li>圖 : jpg, png <div class="recom">建議將主視覺放中央</div></li>
+		<li>字 : 40px <div class="recom">建議十個全型字內</div></li>
+		<li>圖示 : 100px * 100px <img src="loading.svg" style="width: 50px;height: 50px;vertical-align: middle;"></li>
+	</ul>
+</div>
+
+</div>
+
+
+<h1 id="game">game play</h1>
+<h2>遊戲進行中，前往商店按鈕永遠在畫面上，客戶可選擇按鈕顯示位置 *</h2>
+
+<div class="block-set" style="width: 800px;height: 890px;">
+<div class="loading-block bg-spec gameplay landscape" style="background-image: url(gameplay.jpg);">
+	<ul class="icon-block">
+		<li class="icon icon-unmute" style="position: absolute;left: 9px;bottom: 9px;"></li>
+		<li class="icon icon-store" style="position: absolute;right: 9px;bottom: 9px;"></li>
+	</ul>
+</div>
+
+<div class="gameplay-pos spec">
+<h3>* <strong>下載按鈕</strong>可設定的位置，<strong>取消靜音鍵</strong>固定在左下，點擊後即消失。</h3>
+	<ul class="icon-block">
+		<li class="icon icon-unmute" style="position: absolute;left: 9px;bottom: 9px;opacity: .2;"></li>
+		<li class="icon icon-store" style="left: 9px;top: 105px;"></li>
+		<li class="icon icon-store" style="right: 9px;top: 105px;"></li>
+		<li class="icon icon-store" style="right: 9px;bottom: 9px;"></li>
+		<li class="icon icon-store" style="left: 219px;bottom: 9px;"></li>
+	</ul>
+</div>
+
+<div class="loading-block bg-spec gameplay gp2 landscape" style="background-image: url(gameplay.jpg);">
+<div class="notif">偵測到您的效能下降，已為您調整到適合的遊戲品質。</div>
+	<ul class="icon-block">
+		<li class="icon icon-store" style="position: absolute;right: 9px;bottom: 9px;"></li>
+	</ul>
+</div>
+
+
+<div class="spec" style="width: 260px;left:520px">
+	<h3>viewport 960 * 540 之下</h3>
+	<ul>
+		<li>80 * 80 / bottom&right : 10px</li>
+		<li>
+			<div class="icon-block icon icon-unmute"></div>
+			
+			解除靜音 <spen class="recom">ios一次性顯示</spen>
+		</li>
+		<li>
+			<div class="icon-block icon icon-store"></div>
+			連結商店 <spen class="recom">判斷UA前往商店</spen>
+		</li>
+		<li style="color:#999;">
+			------------------------ if needed ------------------------
+		</li>
+		<li>
+			<div class="icon-block icon icon-res-lo"></div>
+			<div class="icon-block icon icon-res-hi"></div>
+			低畫值 / 高畫值
+		</li>
+		<li>
+			<div class="icon-block icon icon-back"></div>
+			返回
+		</li>
+	</ul>
+</div>
+
+<div class="spec" style="width: 260px;left:520px;top:615px">
+	<h3>viewport 960 * 540 之下</h3>
+
+	<ul>
+		<li>偵測到效能下降時顯示，3 秒後消失</li>
+		<li>高 : 60px</li>
+		<li>字 : 30px</li>
+	</ul>
+</div>
+
+</div>
+
+<h1 id="end">trial end</h1>
+<h2>當試玩結束或遊戲意外中斷 * 時顯示，畫面列出 app icon 及所有商店按鈕。</h2>
+
+<div class="block-set">
+<div class="loading-block bg-spec landscape end" style="background-image: url(acu-end.jpg);">
+	<h2><img src="game-icon.png" class="game-icon"> 
+		您的試玩時間已經結束，請至商店下載 App
+	<div class="store">
+		<a class="store-ios" href="javascript: void(0)"></a>
+		<a class="store-android" href="javascript: void(0)"></a>
+		<a class="store-custom" href="javascript: void(0)">custom</a>
+	</div>
+	</h2>
+</div>
+
+<div class="loading-block bg-spec portrait end" style="background-image: url(acu-end.jpg);">
+	<h2><img src="game-icon.png" class="game-icon"> 
+		您的試玩時間已經結束，請至商店下載 App
+	<div class="store">
+		<a class="store-ios" href="javascript: void(0)"></a>
+		<a class="store-android" href="javascript: void(0)"></a>
+		<!-- <a class="store-custom" href="#">custom</a> -->
+	</div>
+	</h2>
+</div>
+
+<div class="spec">
+	<h3>viewport 960 * 540 之下</h3>
+	<ul>
+		<li>圖 : jpg, png <div class="recom">建議將主視覺放中央</div></li>
+		<li>字 : 40px <div class="recom"></div></li>
+		<li>商店按鈕 : 180px * 60px <div class="recom">可自訂</div></li>
+		<li>App icon : 60px * 60px</li>
+	</ul>
+</div>
+
+</div>
+</body>
+</html>
